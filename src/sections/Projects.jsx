@@ -72,11 +72,12 @@ const Projects = () => {
 
           <div className="flex justify-between items-center mt-7">
             <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
-              <img src="/assets/left-arrow.png" alt="left arrow" />
+       
+              <img src="https://img.icons8.com/?size=100&id=H7BgN38BQpxA&format=png&color=000000" alt="left arrow" />
             </button>
 
             <button className="arrow-btn" onClick={() => handleNavigation('next')}>
-              <img src="/assets/right-arrow.png" alt="right arrow" className="w-4 h-4" />
+              <img src="https://img.icons8.com/?size=100&id=tcefkj4jmLp3&format=png&color=000000" alt="right arrow" className="w-4 h-4" />
             </button>
           </div>
         </div>

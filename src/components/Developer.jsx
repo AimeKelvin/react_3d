@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useMemo } from 'react';
+import Particles from '../components/Particles'
 import { useGraph } from '@react-three/fiber';
 import { useGLTF, useAnimations, useFBX } from '@react-three/drei';
 import { SkeletonUtils } from 'three-stdlib';

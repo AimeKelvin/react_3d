@@ -26,12 +26,12 @@ export const navLinks = [
   export const myProjects = [
     {
       title: 'Virtual Thread',
-      desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+      desc: '3D Tshirt custmizer tool built in the hope of success but crashed by lack of skills and realityy',
       subdesc:
-        'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
+        'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Nextjs and Convex, Podcastr is designed for optimal performance and scalability.',
       href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
       texture: '/textures/project/project1.mp4',
-      logo: '/assets/project-logo1.png',
+      logo: 'https://img.icons8.com/?size=100&id=GjCK2f2wpZxt&format=png&color=000000',
       logoStyle: {
         backgroundColor: '#2A1816',
         border: '0.2px solid #36201D',
@@ -42,22 +42,22 @@ export const navLinks = [
         {
           id: 1,
           name: 'React.js',
-          path: '/assets/react.svg',
+          path: 'https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000',
         },
         {
           id: 2,
           name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
+          path: 'https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000',
         },
         {
           id: 3,
           name: 'TypeScript',
-          path: '/assets/typescript.png',
+          path: 'https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000',
         },
         {
           id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          name: 'Nextjs',
+          path: 'https://img.icons8.com/?size=100&id=MWiBjkuHeMVq&format=png&color=000000',
         },
       ],
     },
@@ -68,7 +68,7 @@ export const navLinks = [
         'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
       href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
       texture: '/textures/project/project1.mp4',
-      logo: '/assets/project-logo2.png',
+      logo: 'https://img.icons8.com/?size=100&id=q89fSabiI5lg&format=png&color=000000',
       logoStyle: {
         backgroundColor: '#13202F',
         border: '0.2px solid #17293E',
@@ -79,22 +79,22 @@ export const navLinks = [
         {
           id: 1,
           name: 'React.js',
-          path: '/assets/react.svg',
+          path: 'https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000',
         },
         {
           id: 2,
           name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
+          path: 'https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000',
         },
         {
           id: 3,
           name: 'TypeScript',
-          path: '/assets/typescript.png',
+          path: 'https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000',
         },
         {
           id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          name: 'Nextjs',
+          path: 'https://img.icons8.com/?size=100&id=MWiBjkuHeMVq&format=png&color=000000',
         },
       ],
     },
@@ -118,22 +118,22 @@ export const navLinks = [
         {
           id: 1,
           name: 'React.js',
-          path: '/assets/react.svg',
+          path: 'https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000',
         },
         {
           id: 2,
           name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
+          path: 'https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000',
         },
         {
           id: 3,
           name: 'TypeScript',
-          path: '/assets/typescript.png',
+          path: 'https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000',
         },
         {
           id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          name: 'Nextjs',
+          path: 'https://img.icons8.com/?size=100&id=MWiBjkuHeMVq&format=png&color=000000',
         },
       ],
     },
@@ -155,22 +155,22 @@ export const navLinks = [
         {
           id: 1,
           name: 'React.js',
-          path: '/assets/react.svg',
+          path: 'https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000',
         },
         {
           id: 2,
           name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
+          path: 'https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000',
         },
         {
           id: 3,
           name: 'TypeScript',
-          path: '/assets/typescript.png',
+          path: 'https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000',
         },
         {
           id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          name: 'Nextjs',
+          path: 'https://img.icons8.com/?size=100&id=MWiBjkuHeMVq&format=png&color=000000',
         },
       ],
     },
@@ -192,22 +192,22 @@ export const navLinks = [
         {
           id: 1,
           name: 'React.js',
-          path: '/assets/react.svg',
+          path: 'https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000',
         },
         {
           id: 2,
           name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
+          path: 'https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000',
         },
         {
           id: 3,
           name: 'TypeScript',
-          path: '/assets/typescript.png',
+          path: 'https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000',
         },
         {
           id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          name: 'Nextjs',
+          path: 'https://img.icons8.com/?size=100&id=MWiBjkuHeMVq&format=png&color=000000',
         },
       ],
     },
@@ -227,16 +227,16 @@ export const navLinks = [
   export const workExperiences = [
     {
       id: 1,
-      name: 'Framer',
+      name: 'Student',
       pos: 'Lead Web Developer',
       duration: '2022 - Present',
       title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-      icon: '/assets/framer.svg',
+      icon: 'https://img.icons8.com/?size=100&id=RWH5eUW9Vr7f&format=png&color=000000',
       animation: 'victory',
     },
     {
       id: 2,
-      name: 'Figma',
+      name: 'e-Shuri',
       pos: 'Web Developer',
       duration: '2020 - 2022',
       title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
@@ -245,7 +245,7 @@ export const navLinks = [
     },
     {
       id: 3,
-      name: 'Notion',
+      name: 'Chroste',
       pos: 'Junior Web Developer',
       duration: '2019 - 2020',
       title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
