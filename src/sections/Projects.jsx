@@ -7,6 +7,7 @@ import { Center, OrbitControls } from '@react-three/drei';
 import { myProjects } from '../constants/index.js';
 import CanvasLoader from '../components/Loading.jsx';
 import DemoComputer from '../components/Desktop.jsx';
+import Particles from '../components/Particles.jsx';
 
 const projectCount = myProjects.length;
 
@@ -80,14 +81,18 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
-          <Canvas>
+        <div className=" bg-transparent rounded-lg h-96 md:h-full">
+        <Particles
+        className="absolute inset-0 -z-10 animate-fade-in"
+        quantity={100}
+      />
+          <Canvas className='bg-transparent'>
             <ambientLight intensity={Math.PI} />
             <directionalLight position={[10, 10, 5]} />
             <Center>
-              <Suspense fallback={<CanvasLoader />}>
+              <Suspense >
                 <group scale={2} position={[0, -3, 0]} rotation={[0, -0.1, 0]}>
-                  <DemoComputer texture={currentProject.texture} />
+                  <DemoComputer />
                 </group>
               </Suspense>
             </Center>
