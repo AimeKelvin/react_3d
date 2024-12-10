@@ -22,7 +22,26 @@ export const navLinks = [
   ];
   
   
-  
+  export const projects = [
+    {
+      image: "https://chrostedigital.vercel.app/assets/img/portfolio/portfolio_arserve.png",
+      title: "Arserve company",
+      subtitle: "A business website for a multiservice catering company based in Rwanda.",
+      link: "https://arservecompany.com"
+    },
+    {
+      image: "https://www.chroste.com/assets/kevin.com.png",
+      title: "TripleK.com",
+      subtitle: "A portfolio website for a young Artist based in Rwanda",
+      link: "https://triplek.vercel.app"
+    },
+    {
+      image: "https://www.chroste.com/assets/chroste%20landing%20page.png",
+      title: "Chroste Labs",
+      subtitle: "My own web development agency founded with the aim of providing affordable web dev services.",
+      link: "https://chroste.com"
+    }
+  ];
   
   export const calculateSizes = (isSmall, isMobile, isTablet) => {
     return {
