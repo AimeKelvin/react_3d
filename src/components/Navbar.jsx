@@ -28,13 +28,13 @@ const Navbar = ({ links = [], logoHref = "/", children }) => {
         }`}
       >
         <div className="container flex items-center justify-between p-6 mx-auto">
-          {/* Logo */}
-          <a href={logoHref} className="duration-200 text-zinc-300 hover:text-zinc-100">
-            {/* Logo can go here */}
-          </a>
+          {/* "Aime" on the left */}
+          <div className="mr-auto text-zinc-400 hover:text-zinc-100 duration-200">
+            Aime
+          </div>
 
-          {/* Navbar Links */}
-          <div className="flex flex-wrap justify-center sm:justify-start items-center space-x-6 w-full sm:w-auto">
+          {/* Navbar Links on the right */}
+          <div className="flex flex-wrap justify-center sm:justify-end items-center space-x-6 w-full sm:w-auto">
             {Array.isArray(links) && links.map((link) => (
               <a
                 key={link.href}
@@ -44,11 +44,6 @@ const Navbar = ({ links = [], logoHref = "/", children }) => {
                 {link.label}
               </a>
             ))}
-          </div>
-
-          {/* "Aime" text on the right */}
-          <div className="ml-auto text-zinc-400 hover:text-zinc-100 duration-200">
-            Aime
           </div>
 
           {/* Render children inside the Navbar */}
