@@ -1,11 +1,9 @@
 import Particles from "../components/Particles";
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
-import Button from "../components/Button";
+import { motion } from "framer-motion";
+import { FaReact, FaNodeJs, FaPhp } from 'react-icons/fa'; // React Icons (Font Awesome)
+import { SiTailwindcss, SiMysql, SiNextdotjs, SiJavascript } from 'react-icons/si'; // More Icons
 
 const About = () => {
-  const [expanded, setExpanded] = useState(false);
-
   const paragraphVariants = {
     hidden: { opacity: 0, y: 10 },
     visible: { opacity: 1, y: 0 },
@@ -33,7 +31,7 @@ const About = () => {
           About Me
         </motion.h2>
 
-        {/* Text content with toggle functionality */}
+        {/* Text content */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -41,45 +39,31 @@ const About = () => {
           viewport={{ once: true }}
           className="text-base sm:text-lg text-zinc-500 leading-relaxed relative"
         >
-          <AnimatePresence mode="wait">
-            {expanded ? (
-              <motion.p
-                key="expanded"
-                variants={paragraphVariants}
-                initial="hidden"
-                animate="visible"
-                exit="exit"
-                transition={{
-                  duration: 0.7,
-                  ease: [0.22, 1, 0.36, 1], // Smooth fade-in/out easing
-                }}
-              >
-                My journey into web development began with <strong>FreeCodeCamp</strong>, where I dove into coding on my own, tackling challenges and building projects that laid the foundation for my career. After gaining confidence, I took my skills further by joining <strong>SOS Technical High School</strong>, where I met two amazing classmates who shared my passion for technology. Together, we <strong>founded Chroste Labs</strong> &mdash; a space where we could collaborate on innovative projects and make our mark in the tech world.
-              </motion.p>
-            ) : (
-              <motion.p
-                key="collapsed"
-                variants={paragraphVariants}
-                initial="hidden"
-                animate="visible"
-                exit="exit"
-                transition={{
-                  duration: 0.7,
-                  ease: [0.22, 1, 0.36, 1], // Smooth fade-in/out easing
-                }}
-              >
-                My journey into web development began with <strong>FreeCodeCamp</strong>, where I dove into coding on my own, tackling challenges and building projects.
-              </motion.p>
-            )}
-          </AnimatePresence>
-
-          {/* Toggle button */}
-          <Button
-            onClick={() => setExpanded(!expanded)}
-            title={expanded ? "Show Less" : "Read More"}
-            className="mt-4"
-          />
+          <motion.p
+            key="expanded"
+            variants={paragraphVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            transition={{
+              duration: 0.7,
+              ease: [0.22, 1, 0.36, 1], // Smooth fade-in/out easing
+            }}
+          >
+            My journey into web development began with <strong>FreeCodeCamp</strong>, where I dove into coding on my own, tackling challenges and building projects that laid the foundation for my career. After gaining confidence, I took my skills further by joining <strong>SOS Technical High School</strong>, where I met two amazing classmates who shared my passion for technology. Together, we <strong>founded Chroste Labs</strong> &mdash; a space where we could collaborate on innovative projects and make our mark in the tech world.
+          </motion.p>
         </motion.div>
+
+        {/* Tools and languages icons */}
+        <div className="flex justify-center gap-6 mt-8">
+          <SiTailwindcss size={40} className="text-cyan-500" title="Tailwind CSS" />
+          <SiJavascript size={40} className="text-yellow-500" title="JavaScript" /> {/* JavaScript icon */}
+          <FaReact size={40} className="text-cyan-600" title="React" />
+          <SiNextdotjs size={40} className="text-white" title="Next.js" />
+          <FaNodeJs size={40} className="text-green-600" title="Node.js" />
+          <SiMysql size={40} className="text-blue-600" title="MySQL" />
+          <FaPhp size={40} className="text-blue-600" title="PHP" />
+        </div>
       </div>
     </div>
   );
