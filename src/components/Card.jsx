@@ -86,7 +86,7 @@ export default function Card({ image, title, subtitle, link }) {
               className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
               style={{ transform: "translateZ(20px)" }}
             >
-              Try now →
+              Visit site →
             </a>
           )}
           <div

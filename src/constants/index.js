@@ -30,16 +30,22 @@ export const navLinks = [
       link: "https://arservecompany.com"
     },
     {
-      image: "https://www.chroste.com/assets/kevin.com.png",
-      title: "TripleK.com",
-      subtitle: "A portfolio website for a young Artist based in Rwanda",
-      link: "https://triplek.vercel.app"
+      image: "/ben.png",
+      title: "Ben Real Estate",
+      subtitle: "A real estate marketplace for rwanda agent Ben Shakondo",
+      link: "https://kigalibenproperties.com"
     },
     {
       image: "https://www.chroste.com/assets/chroste%20landing%20page.png",
       title: "Chroste Labs",
       subtitle: "My own web development agency founded with the aim of providing affordable web dev services.",
       link: "https://chroste.com"
+    },
+    {
+      image: "/chroste1.png",
+      title: "The first chroste website",
+      subtitle: "The business website of chroste when we first began.",
+      link: "https://chrostedigital.vercel.app"
     }
   ];
   
