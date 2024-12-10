@@ -8,7 +8,7 @@ function App() {
     const navbarLinks = [
       { href: "#home", label: "Home" },
       { href: "#projects", label: "Projects" },
-      { href: "#experience", label: "Experience" }
+      { href: "#xp", label: "Experience" }
     ];
   return (
    <>
