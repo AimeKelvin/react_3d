@@ -46,7 +46,15 @@ export const navLinks = [
       title: "The first chroste website",
       subtitle: "The business website of chroste when we first began.",
       link: "https://chrostedigital.vercel.app"
+    },
+  /*
+    {
+      image: "/vt.png",
+      title: "3D Virtual Thread",
+      subtitle: "A cloth customization app for stylists and fashionisters..",
+      link: "#"
     }
+  */
   ];
   
   export const calculateSizes = (isSmall, isMobile, isTablet) => {
