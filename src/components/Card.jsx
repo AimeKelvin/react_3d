@@ -1,9 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
+import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 export default function Card({ image, title, subtitle, link }) {
   const containerRef = useRef(null);
   const contentRef = useRef(null);
   const imageRef = useRef(null);
+  const [liked, setLiked] = useState(false); // State to track like status
 
   const handleMouseMove = (e) => {
     if (!containerRef.current) return;
@@ -33,6 +35,10 @@ export default function Card({ image, title, subtitle, link }) {
     if (imageRef.current) {
       imageRef.current.style.transform = "translateZ(100px)";
     }
+  };
+
+  const toggleLike = () => {
+    setLiked((prevLiked) => !prevLiked); // Toggle like status
   };
 
   return (
@@ -83,12 +89,17 @@ export default function Card({ image, title, subtitle, link }) {
               Try now →
             </a>
           )}
-          <button
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+          <div
+            onClick={toggleLike}
+            className="cursor-pointer"
             style={{ transform: "translateZ(20px)" }}
           >
-            Sign up
-          </button>
+            {liked ? (
+              <FaHeart className="text-red-500 text-2xl" />
+            ) : (
+              <FaRegHeart className="text-gray-400 text-2xl" />
+            )}
+          </div>
         </div>
       </div>
     </div>
