@@ -1,108 +1,42 @@
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import { Suspense, useState } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { Center, OrbitControls } from '@react-three/drei';
+import Card from "../components/Card";
+import Particles from "../components/Particles";
 
-import { myProjects } from '../constants/index.js';
-import CanvasLoader from '../components/Loading.jsx';
-import DemoComputer from '../components/Desktop.jsx';
-import Particles from '../components/Particles.jsx';
+const Projects = () => (
+  <section className="min-h-screen bg-transparent relative px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
+    {/* Particles background */}
+    <Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={100} />
 
-const projectCount = myProjects.length;
+    {/* Section title */}
+    <div className="mb-10">
+      <h2 className="text-4xl font-bold text-center text-neutral-800 dark:text-white">
+        my Works
+      </h2>
+    </div>
 
-const Projects = () => {
-  const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
-
-  const handleNavigation = (direction) => {
-    setSelectedProjectIndex((prevIndex) => {
-      if (direction === 'previous') {
-        return prevIndex === 0 ? projectCount - 1 : prevIndex - 1;
-      } else {
-        return prevIndex === projectCount - 1 ? 0 : prevIndex + 1;
-      }
-    });
-  };
-
-  useGSAP(() => {
-    gsap.fromTo(`.animatedText`, { opacity: 0 }, { opacity: 1, duration: 1, stagger: 0.2, ease: 'power2.inOut' });
-  }, [selectedProjectIndex]);
-
-  const currentProject = myProjects[selectedProjectIndex];
-
-  return (
-    <section className="c-space my-20">
-      <p className="head-text">My Selected Work</p>
-
-      <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
-        <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
-          <div className="absolute top-0 right-0">
-            <img src={currentProject.spotlight} alt="spotlight" className="w-full h-96 object-cover rounded-xl" />
-          </div>
-
-          <div className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg" style={currentProject.logoStyle}>
-            <img className="w-10 h-10 shadow-sm" src={currentProject.logo} alt="logo" />
-          </div>
-
-          <div className="flex flex-col gap-5 text-white-600 my-5">
-            <p className="text-white text-2xl font-semibold animatedText">{currentProject.title}</p>
-
-            <p className="animatedText">{currentProject.desc}</p>
-            <p className="animatedText">{currentProject.subdesc}</p>
-          </div>
-
-          <div className="flex items-center justify-between flex-wrap gap-5">
-            <div className="flex items-center gap-3">
-              {currentProject.tags.map((tag, index) => (
-                <div key={index} className="tech-logo">
-                  <img src={tag.path} alt={tag.name} />
-                </div>
-              ))}
-            </div>
-
-            <a
-              className="flex items-center gap-2 cursor-pointer text-white-600"
-              href={currentProject.href}
-              target="_blank"
-              rel="noreferrer">
-              <p>Check Live Site</p>
-              <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
-            </a>
-          </div>
-
-          <div className="flex justify-between items-center mt-7">
-            <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
-       
-              <img src="https://img.icons8.com/?size=100&id=H7BgN38BQpxA&format=png&color=000000" alt="left arrow" />
-            </button>
-
-            <button className="arrow-btn" onClick={() => handleNavigation('next')}>
-              <img src="https://img.icons8.com/?size=100&id=tcefkj4jmLp3&format=png&color=000000" alt="right arrow" className="w-4 h-4" />
-            </button>
-          </div>
-        </div>
-
-        <div className=" bg-transparent rounded-lg h-96 md:h-full">
-        <Particles
-        className="absolute inset-0 -z-10 animate-fade-in"
-        quantity={100}
+    {/* Cards grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
+      <Card
+        image="https://chrostedigital.vercel.app/assets/img/portfolio/portfolio_arserve.png"
+        title="Arserve company"
+        subtitle="A business website for a multiservice catering company based in Rwanda."
+        link="https://arservecompany.com"
       />
-          <Canvas className='bg-transparent'>
-            <ambientLight intensity={Math.PI} />
-            <directionalLight position={[10, 10, 5]} />
-            <Center>
-              <Suspense >
-                <group scale={2} position={[0, -3, 0]} rotation={[0, -0.1, 0]}>
-                  <DemoComputer />
-                </group>
-              </Suspense>
-            </Center>
-            <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
-          </Canvas>
-        </div>
-      </div>
-    </section>
-  );
-};
+      <Card
+        image="https://www.chroste.com/assets/kevin.com.png"
+        title="TripleK.com"
+        subtitle="A portfolio website for a young Artist based in Rwanda"
+        link="https://triplek.vercel.app"
+      />
+      
+      <Card
+        image="https://www.chroste.com/assets/chroste%20landing%20page.png"
+        title="Chroste Labs"
+        subtitle="My own web development agency founded with the aim of providing affordable web dev services."
+        link="https://chroste.com"
+      />
+     
+    </div>
+  </section>
+);
 
 export default Projects;
