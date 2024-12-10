@@ -50,14 +50,28 @@ const About = () => {
               ease: [0.22, 1, 0.36, 1], // Smooth fade-in/out easing
             }}
           >
-            My journey into web development began with <strong>FreeCodeCamp</strong>, where I dove into coding on my own, tackling challenges and building projects that laid the foundation for my career. After gaining confidence, I took my skills further by joining <strong>SOS Technical High School</strong>, where I met two amazing classmates who shared my passion for technology. Together, we <strong>founded Chroste Labs</strong> &mdash; a space where we could collaborate on innovative projects and make our mark in the tech world.
+            My journey into web development began with <strong>FreeCodeCamp</strong>, where I started learning coding on my own, completing challenges, and building small projects that sparked my interest in technology. As I grew more confident, I decided to take my skills further and joined <strong>SOS Technical High School</strong>, where I met like-minded individuals who shared my passion. Together, we founded <strong>Chroste Labs</strong>, a space where we collaborate on innovative tech projects. Today, I’m proficient in a variety of technologies and tools that form the backbone of modern web development.
+          </motion.p>
+
+          <motion.p
+            key="expanded"
+            variants={paragraphVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            transition={{
+              duration: 0.7,
+              ease: [0.22, 1, 0.36, 1], // Smooth fade-in/out easing
+            }}
+          >
+            I specialize in frontend development, using <strong>React</strong> to build dynamic user interfaces, while leveraging <strong>Next.js</strong> for server-side rendering and optimized performance. I’m also proficient in backend development with <strong>Node.js</strong> and <strong>PHP</strong>, and manage databases with <strong>MySQL</strong>. For styling, I use <strong>Tailwind CSS</strong>, which allows for efficient, responsive design. JavaScript is the core language that powers all my work, and I’m always learning and evolving my skills to keep up with the ever-changing tech landscape.
           </motion.p>
         </motion.div>
 
         {/* Tools and languages icons */}
         <div className="flex justify-center gap-6 mt-8">
           <SiTailwindcss size={40} className="text-cyan-500" title="Tailwind CSS" />
-          <SiJavascript size={40} className="text-yellow-500" title="JavaScript" /> {/* JavaScript icon */}
+          <SiJavascript size={40} className="text-yellow-500" title="JavaScript" />
           <FaReact size={40} className="text-cyan-600" title="React" />
           <SiNextdotjs size={40} className="text-white" title="Next.js" />
           <FaNodeJs size={40} className="text-green-600" title="Node.js" />
