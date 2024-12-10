@@ -1,7 +1,7 @@
 import Particles from "../components/Particles";
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaPhp } from 'react-icons/fa'; // React Icons (Font Awesome)
-import { SiTailwindcss, SiMysql, SiNextdotjs, SiJavascript } from 'react-icons/si'; // More Icons
+import { FaReact, FaNodeJs, FaPhp } from 'react-icons/fa';
+import { SiTailwindcss, SiMysql, SiNextdotjs, SiJavascript } from 'react-icons/si'; 
 
 const About = () => {
   const paragraphVariants = {
@@ -50,7 +50,7 @@ const About = () => {
               ease: [0.22, 1, 0.36, 1], // Smooth fade-in/out easing
             }}
           >
-            My journey into web development began with <strong>FreeCodeCamp</strong>, where I started learning coding on my own, completing challenges, and building small projects that sparked my interest in technology. As I grew more confident, I decided to take my skills further and joined <strong>SOS Technical High School</strong>, where I met like-minded individuals who shared my passion. Together, we founded <strong>Chroste Labs</strong>, a space where we collaborate on innovative tech projects. Today, I’m proficient in a variety of technologies and tools that form the backbone of modern web development.
+            I began my web development journey with <strong>FreeCodeCamp</strong>, learning coding on my own. After gaining confidence, I joined <strong>SOS Technical High School</strong> and co-founded <strong>Chroste Labs</strong>, where we collaborate on exciting projects. Today, I specialize in frontend and backend technologies.
           </motion.p>
 
           <motion.p
@@ -64,7 +64,7 @@ const About = () => {
               ease: [0.22, 1, 0.36, 1], // Smooth fade-in/out easing
             }}
           >
-            I specialize in frontend development, using <strong>React</strong> to build dynamic user interfaces, while leveraging <strong>Next.js</strong> for server-side rendering and optimized performance. I’m also proficient in backend development with <strong>Node.js</strong> and <strong>PHP</strong>, and manage databases with <strong>MySQL</strong>. For styling, I use <strong>Tailwind CSS</strong>, which allows for efficient, responsive design. JavaScript is the core language that powers all my work, and I’m always learning and evolving my skills to keep up with the ever-changing tech landscape.
+            I’m skilled in building dynamic UIs with <strong>React</strong> and <strong>Next.js</strong>, backend development with <strong>Node.js</strong> and <strong>PHP</strong>, and managing databases with <strong>MySQL</strong>. I use <strong>Tailwind CSS</strong> for styling and <strong>JavaScript</strong> is my core language. I’m also exploring <strong>Three.js</strong> for 3D graphics, still a beginner but excited to grow.
           </motion.p>
         </motion.div>
 
@@ -74,6 +74,13 @@ const About = () => {
           <SiJavascript size={40} className="text-yellow-500" title="JavaScript" />
           <FaReact size={40} className="text-cyan-600" title="React" />
           <SiNextdotjs size={40} className="text-white" title="Next.js" />
+          {/* Resized Image */}
+          <img 
+            src="https://saarthack.github.io/portfolio/images/download-min.webp" 
+            alt="Three.js" 
+            className="w-10 h-10" 
+            title="Three.js" 
+          />
           <FaNodeJs size={40} className="text-green-600" title="Node.js" />
           <SiMysql size={40} className="text-blue-600" title="MySQL" />
           <FaPhp size={40} className="text-blue-600" title="PHP" />

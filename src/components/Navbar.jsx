@@ -46,6 +46,11 @@ const Navbar = ({ links = [], logoHref = "/", children }) => {
             ))}
           </div>
 
+          {/* "Aime" text on the right */}
+          <div className="ml-auto text-zinc-400 hover:text-zinc-100 duration-200">
+            Aime
+          </div>
+
           {/* Render children inside the Navbar */}
           {children && <div className="ml-4">{children}</div>}
         </div>

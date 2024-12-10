@@ -10,7 +10,7 @@ const Projects = () => (
 
  
     <div className="mb-10">
-      <h2 className="text-4xl font-bold text-center text-neutral-800 dark:text-white head-text">
+      <h2 className="text-4xl font-bold text-center text-neutral-800 head-text">
         My Works
       </h2>
     </div>
