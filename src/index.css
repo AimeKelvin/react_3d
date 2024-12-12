@@ -28,7 +28,6 @@ body {
 
   .cursor {
     @apply fixed w-12 h-12  border border-[#c6c6c6] rounded-full left-0 top-0 pointer-events-none transform -translate-x-1/2 -translate-y-1/2
-    transition duration-1000 ease-in-out
     ;
   }
 
