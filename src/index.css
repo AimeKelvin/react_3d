@@ -26,6 +26,21 @@ body {
     @apply flex flex-col items-center gap-4 sm:flex-row md:gap-6 relative z-20;
   }
 
+  .cursor {
+    @apply fixed w-12 h-12  border border-[#c6c6c6] rounded-full left-0 top-0 pointer-events-none transform -translate-x-1/2 -translate-y-1/2
+    transition duration-1000 ease-in-out
+    ;
+  }
+
+  .cursor2 {
+    @apply fixed w-2 h-2  bg-[#c6c6c6] border-[#c6c6c6] rounded-full left-0 top-0 pointer-events-none transform -translate-x-1/2 -translate-y-1/2
+    ;
+  }
+
+  .circle{
+    @apply h-6 w-6 rounded-[24px] bg-white absolute top-0 left-0;
+  }
+
   .nav-li {
     @apply text-neutral-400 hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
   }
