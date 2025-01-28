@@ -21,8 +21,7 @@ function App() {
    <Projects />
    <Experience/>
    <Footer/>
-   <div className="cursor"></div>
-   <div className="cursor2"></div>
+   
    
    </>
   )

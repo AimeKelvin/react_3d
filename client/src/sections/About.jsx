@@ -11,7 +11,7 @@ const About = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-transparent relative px-4 sm:px-6 lg:px-8">
+    <section className="flex flex-col justify-center items-center bg-transparent relative px-4 sm:px-6 lg:px-8">
       {/* Background particles */}
       <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
@@ -86,7 +86,7 @@ const About = () => {
           <FaPhp size={40} className="text-blue-600" title="PHP" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
