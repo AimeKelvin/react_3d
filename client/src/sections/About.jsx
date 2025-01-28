@@ -11,7 +11,7 @@ const About = () => {
   };
 
   return (
-    <section className="flex flex-col justify-center items-center bg-transparent relative px-4 sm:px-6 lg:px-8">
+    <section className="flex flex-col justify-center items-center bg-transparent relative px-4 sm:px-6 lg:px-8 mb-20">
       {/* Background particles */}
       <Particles
         className="absolute inset-0 -z-10 animate-fade-in"

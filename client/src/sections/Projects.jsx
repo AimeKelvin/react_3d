@@ -4,7 +4,7 @@ import {projects} from '../constants/index.js'
 
 
 const Projects = () => (
-  <section className="min-h-screen bg-transparent relative px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center" id="projects">
+  <section className="min-h-screen bg-transparent relative px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center" mt-5n id="projects">
     
     <Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={100} />
 
